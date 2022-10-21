@@ -1,0 +1,11 @@
+{
+	"name": "chordsbook-app",
+	"id": "org.nativescript.chordsbookapp",
+	"appPath": "src",
+	"appResourcesPath": "App_Resources",
+	"android": {
+		"v8Flags": "--expose_gc",
+		"markingMode": "none"
+	},
+	"main": "bundle"
+}
