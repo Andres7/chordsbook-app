@@ -1,0 +1,41 @@
+<ActionBar title="Chordsbook">
+  <GridLayout columns="50, *">
+    <Label class="action-bar-title" text="Home" colSpan="2"></Label>
+    <Label class="fas" text="&#xf0c9;" tap="onDrawerButtonTap"></Label>
+  </GridLayout>
+</ActionBar>
+
+
+<DockLayout stretchLastChild="true" backgroundColor="#000000">
+
+  <!-- <SearchBar width="100%" dock="top" hint="Buscar..." (submit)="onSubmit($event)"></SearchBar> -->
+
+  <!-- <DockLayout stretchLastChild="true" dock="top" backgroundColor="#000000">
+    <button class="fas btn" *ngIf="backup.length > 0 || isFavorite" dock="left" text="&#xf2ea;" (tap)="retornar()"></button>
+    <button class="fas btn" dock="left" text="&#xf070;" (tap)="borrarTodo()"></button>
+    <button class="fas btn" dock="left" text="&#xf004;" (tap)="loadFavorites()"></button>
+    <button class="fas btn" dock="left" text="&#xf005;" (tap)="recomendado()"></button>
+    <label dock="left" color="white" [text]="'Resultado: ' + items.length"></label>
+    <Switch dock="left" checked="false" (checkedChange)="onCheckedChange($event)"> </Switch>
+    <ActivityIndicator dock="left" *ngIf="loading" [busy]="true"></ActivityIndicator>
+  </DockLayout> -->
+
+  <GridLayout dock="top">
+    <ScrollView orientation="vertical">
+      <WrapLayout>
+        <DockLayout *ngFor="let item of items" textWrap="true" class="figura" stretchLastChild="true" background="green">
+
+          <!-- <Image alt="Imagen" class="Image" dock="top" [src]="item.img" stretch="aspectFill"></Image> -->
+
+          <!-- <DockLayout stretchLastChild="true" dock="top" class="buttons">
+            <button dock="left" class="fas" text="&#xf06e;" (tap)="open(item)"></button>
+            <button dock="left" class="fas" [text]="Existe(item) ? '&#xf2ed;' : '&#xf164;'"
+              (tap)="Favorite(item)"></button>
+          </DockLayout> -->
+        </DockLayout>
+
+      </WrapLayout>
+    </ScrollView>
+  </GridLayout>
+
+</DockLayout>
