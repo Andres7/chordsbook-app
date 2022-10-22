@@ -1,3 +1,0 @@
-C:\Users\desar\Desktop\Demo\chordsbook-app\platforms\android\app\src\main\assets\app\bundle.js
-C:\Users\desar\Desktop\Demo\chordsbook-app\platforms\android\app\src\main\assets\app\runtime.js
-C:\Users\desar\Desktop\Demo\chordsbook-app\platforms\android\app\src\main\assets\app\vendor.js
